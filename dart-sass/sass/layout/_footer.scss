@@ -1,6 +1,5 @@
 .footers{
     height: 280px;
-    margin-top: 30px;
     background: $dark-grey;
     color: $light-grey;
     width: 100%;
@@ -19,6 +18,12 @@
     {
         max-width: 300px;
         padding: 0;
+        @media screen and (min-width: 1100px){
+            display: flex;
+            max-width: 100%;
+            width: 100%;
+            padding: auto;
+        }
     }
 
     .footer__liste--element
@@ -27,6 +32,7 @@
         margin: 0.8rem 0;
         font-family: 'roboto-regular';
     }
+    
 }
 
 .lien

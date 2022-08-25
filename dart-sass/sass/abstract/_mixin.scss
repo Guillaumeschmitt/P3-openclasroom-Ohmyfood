@@ -1,0 +1,7 @@
+// loader
+@mixin barreLoader ($color) {
+    width: 100px;
+    height: 25px;
+    border-radius: 5rem;
+    background: $color;
+};

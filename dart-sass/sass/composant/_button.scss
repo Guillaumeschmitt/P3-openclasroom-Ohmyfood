@@ -1,0 +1,11 @@
+button{
+    font-family: 'roboto-regular';
+    background: linear-gradient(200deg, $primary-color 0%, $secondary-color 100%);
+    color: white;
+    border: none;
+    border-radius: 200px;
+    &:hover{
+        box-shadow: 5px 5px 15px 5px #9356dc;
+    }
+    
+}

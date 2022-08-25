@@ -1,0 +1,63 @@
+// // loading bar
+// @mixin barreLoader ($color) {
+//     width: 100px;
+//     height: 25px;
+//     border-radius: 5rem;
+//     background: $color;
+// }
+
+
+// ___ ANIMATION LOADER ___ //
+@keyframes loader-background {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-color: $light-grey;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        // background-color: hsla(0,0%,100%,.9);
+        background-color: $light-grey;
+        opacity: 0.5;
+    }
+}
+@keyframes roll-in {
+    0% {
+        transform: scale(0) rotate(360deg);
+        opacity: (0.5);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: (1);
+    }
+}
+
+.pageLoader{
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    animation: loader-background 3000ms;
+    &__bar1 {
+        animation: roll-in 800ms ease-out 200ms alternate 2 both;
+        @include barreLoader ($primary-color);
+    }
+    &__bar2 {
+        animation: roll-in 1000ms ease-out 400ms alternate 2 both;
+        @include barreLoader ($secondary-color);    
+    }
+    &__bar3 {
+        animation: roll-in 1200ms ease-out 600ms alternate 2 both;
+        @include barreLoader ($tertiary-color);  
+    }
+}

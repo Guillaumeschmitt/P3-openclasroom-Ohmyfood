@@ -1,6 +1,10 @@
 @import "abstract/_variables.scss";
+@import "abstract/_mixin.scss";
 @import "base/_base.scss";
 @import "base/_typography.scss";
 @import "layout/_footer.scss";
 @import "layout/accueil";
-@import "layout/_restaurants.scss"
+@import "layout/_restaurants.scss";
+@import "composant/_button.scss";
+@import "composant/_loader.scss";
+@import "composant/_heart.scss";
