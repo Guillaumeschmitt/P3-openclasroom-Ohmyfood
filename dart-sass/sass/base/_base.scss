@@ -24,6 +24,16 @@ main{
     margin: 0;
 }
 
+@media screen and (min-width: 1000px) {
+    main{
+        max-width: 1200px;
+        margin: auto;
+    }
+    body{
+        background-color: $light-grey;
+    }
+}
+
 h1 {
     font-family: 'shrikhand';
     font-size: 3.5rem;

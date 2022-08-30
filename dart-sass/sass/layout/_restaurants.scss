@@ -1,4 +1,4 @@
-.header-restaurant{
+.header-restaurant {
     display: flex;
     text-align: center;
     // margin-top: 1.4rem;
@@ -7,49 +7,54 @@
     position: relative;
     background-color: white;
     padding-top: 5px;
-    > a {
+
+    >a {
         position: relative;
         font-size: 20px;
         right: 80px;
         top: 14px;
-      }
+    }
 }
 
-.main-restaurant{
+.main-restaurant {
     width: 100%;
-    padding:0
-    
+    padding: 0
 }
-.main-image{
+
+.main-image {
     width: 100%;
     height: 50vh;
-    img{
+
+    img {
         width: 100%;
         height: 100%;
         margin-top: -80px;
-        object-fit: cover;    
+        object-fit: cover;
     }
 
 }
 
-.menu{
+.menu {
     margin-top: -200px;
     padding: 0 15px;
     background-color: $light-grey;
     border-radius: 30px 30px 0 0;
     position: relative;
-    .name_restaurants{
+
+    .name_restaurants {
         font-family: 'shrikhand';
         font-weight: 100;
         padding: 20px 0 0px 0;
     }
-    h3{
+
+    h3 {
         margin: 20px 0 0 0;
         font-weight: lighter;
         text-transform: uppercase;
-        
+
     }
-    h3::after{
+
+    h3::after {
         content: '';
         display: block;
         width: 50px;
@@ -58,13 +63,22 @@
         position: relative;
         // bottom: 3px;
     }
+    .logo-et-coeur{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
-.entrees, .plat, .desserts{
+
+.entrees,
+.plat,
+.desserts {
     display: grid;
     gap: 15px;
-    
+
 }
-.card-menu{
+
+.card-menu {
     background-color: white;
     // display: flex;
     flex-direction: row;
@@ -72,33 +86,159 @@
     font-size: 1.4rem;
     border-radius: 15px;
     box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
-    a{
+    // transition: opacity 1s linear;
+    position: relative;
+    animation: opacity 1s both;
+
+    a {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
     }
-    
-}
-.menu-text {
-        h4{
-            margin: 10px 0 0 3px;
-        }
-        p{
-            margin: 5px 0 8px 3px;
-            font-size: 1.3rem;
-        }
 
 }
-.menu-price{
+
+.menu-text {
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 15px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .overflow{
+        overflow: hidden;
+    }
+
+    h4 {
+        margin: 10px 0 0 3px;
+        font-size: 1.6rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    p {
+        margin: 5px 0 8px 3px;
+        font-size: 1.4rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    span{
+        padding-bottom: 10px;
+    }
+
+}
+
+.menu-price {
     font-weight: bold;
     margin: 0 15px 8px 0;
 }
-.btn{
+
+.btn {
     display: flex;
     justify-content: center;
     width: 100%;
-    button{
-        padding: 11px 35px; 
-        margin: 50px 0 ;
+
+    button {
+        padding: 11px 35px;
+        margin: 50px 0;
     }
 }
+
+.check {
+    // display: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background: $tertiary-color;
+    border-radius: 0 15px 15px 0;
+    right: 0px;
+    padding: 0 13px;
+    height: 100%;
+    opacity: 0;
+    i {
+        display: flex;
+        color: white;
+        transform: rotate(360deg);
+        transition: 1s ease;
+        font-size: 35px;
+        // padding-top: 11px;
+    }
+}
+
+.card-menu:hover {
+    // transition: 1.5s ease;
+
+    .menu-price {
+        padding-right: 70px;
+        transition: 0.5s ease;
+    }
+
+    .check{
+    
+        justify-content: center;
+        align-items: center;
+        animation: slider 1s ease;
+        transform-origin: right;
+        opacity: 1;
+    }
+
+    i {
+        rotate: 360deg;
+        transition: 0.5s;
+    }
+    // .check
+    // {
+    //     transition: 1.5s ease;
+    //     animation: slide-left 1.5s ease;
+    //     opacity: 1;
+    // }
+    
+
+}
+
+
+.entrees{
+    animation: fondu 1s both;
+}
+
+.plat{
+    animation: fondu 1.3s both;
+}
+
+.desserts{
+    animation: fondu 1.9s both;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .restaurant-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+}
+
+@keyframes fondu {
+    0%{
+   
+        opacity: 0;
+
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slider {
+    0% {
+              transform: scaleX(0);
+    }
+    100% {
+              transform: scaleX(-20px);
+    }
+  }
