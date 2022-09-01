@@ -176,6 +176,10 @@ input::placeholder {
 .container-fonctionnement li:hover {
   background-color: rgba(255, 121, 208, 0.1);
 }
+.container-fonctionnement li:hover .fonctionnement-icone {
+  color: #9356dc;
+  font-size: 1.8rem;
+}
 
 .fonctionnement-numeros {
   background-color: #9356dc;
@@ -188,7 +192,7 @@ input::placeholder {
 
 .fonctionnement-icone {
   color: grey;
-  margin: 0 30px;
+  margin: 0 15px;
 }
 
 .restaurants-list {
@@ -245,6 +249,7 @@ input::placeholder {
   }
   .fonctionnement-icone {
     margin: 0 1px;
+    padding-right: 25px;
   }
   .restaurants-list {
     display: grid;
@@ -263,6 +268,12 @@ input::placeholder {
     justify-content: space-between;
   }
 }
+@media screen and (max-width: 1000px) {
+  .main-accueil {
+    max-width: 520px;
+    margin: auto;
+  }
+}
 .header-restaurant {
   display: flex;
   text-align: center;
@@ -275,7 +286,7 @@ input::placeholder {
 .header-restaurant > a {
   position: relative;
   font-size: 20px;
-  right: 80px;
+  right: 30px;
   top: 14px;
 }
 
@@ -406,7 +417,6 @@ input::placeholder {
 .check i {
   display: flex;
   color: white;
-  transform: rotate(360deg);
   transition: 1s ease;
   font-size: 35px;
 }
@@ -423,8 +433,9 @@ input::placeholder {
   opacity: 1;
 }
 .card-menu:hover i {
-  rotate: 360deg;
-  transition: 0.5s;
+  transform: rotate(1turn);
+  transition-duration: 680ms;
+  transition-delay: 100ms;
 }
 
 .entrees {
@@ -446,10 +457,13 @@ input::placeholder {
     grid-template-rows: 1fr;
     gap: 20px;
   }
+  .header-restaurant a {
+    right: 300px;
+  }
 }
-@media (min-width: 280) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .restaurant-list {
-    max-width: 420px;
+    max-width: 290px;
     margin: auto;
   }
   .card-menu {
@@ -469,7 +483,7 @@ input::placeholder {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(-20px);
+    transform: scaleX(1);
   }
 }
 button {
@@ -555,6 +569,8 @@ button:hover {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   background-image: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   opacity: 0;
   transform: scale(0);

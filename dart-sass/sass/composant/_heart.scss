@@ -40,6 +40,8 @@
         $primary-color,
         $secondary-color
         );
+    -webkit-background-clip: text;
+    background-clip:text;
     color: transparent;
     
     opacity: 0;

@@ -77,6 +77,10 @@ input::placeholder{
 }
 .container-fonctionnement li:hover{
     background-color: rgba(255,121,208, 0.1);
+    .fonctionnement-icone{
+        color: $secondary-color;
+        font-size: 1.8rem;
+    }
 }
 .fonctionnement-numeros{
     background-color: $secondary-color;
@@ -89,7 +93,7 @@ input::placeholder{
 
 .fonctionnement-icone{
     color: grey;
-    margin: 0 30px;
+    margin: 0 15px;
 }
 
 .restaurants-list{
@@ -155,6 +159,7 @@ input::placeholder{
     }
     .fonctionnement-icone{
         margin: 0 1px;
+        padding-right: 25px;
     }
     .restaurants-list {
         display: grid;
@@ -174,4 +179,11 @@ input::placeholder{
     justify-content: space-between;
     }
     
+}
+
+@media screen and (max-width: 1000px){
+    .main-accueil{
+        max-width: 520px;
+        margin: auto;
+    }
 }
