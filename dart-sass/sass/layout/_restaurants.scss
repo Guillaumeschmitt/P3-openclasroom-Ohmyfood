@@ -204,11 +204,11 @@
 }
 
 .plat{
-    animation: fondu 1.3s both;
+    animation: fondu 2s both;
 }
 
 .desserts{
-    animation: fondu 1.9s both;
+    animation: fondu 3s both;
 }
 
 
@@ -219,6 +219,16 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         gap: 20px;
+    }
+}
+
+@media (min-width: 280) and (max-width: 768px) {
+    .restaurant-list {
+        max-width: 420px;
+        margin: auto;
+    }
+    .card-menu{
+        font-size: 1.3rem;
     }
 }
 

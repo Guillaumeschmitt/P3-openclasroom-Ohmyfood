@@ -67,7 +67,7 @@ input::placeholder{
     
     li{
         padding: 15px;
-        border: 2px solid $light-grey;
+        // border: 2px solid $light-grey;
         box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
         border-radius: 20px;
         margin-bottom: 15px;
@@ -75,7 +75,9 @@ input::placeholder{
         font-weight: bold;
     }
 }
-
+.container-fonctionnement li:hover{
+    background-color: rgba(255,121,208, 0.1);
+}
 .fonctionnement-numeros{
     background-color: $secondary-color;
     color: white;

@@ -91,7 +91,6 @@ a {
     justify-content: space-between;
     max-width: 100%;
     width: 100%;
-    padding: auto;
   }
 }
 .footers .footer__liste--element {
@@ -167,12 +166,15 @@ input::placeholder {
 }
 .container-fonctionnement li {
   padding: 15px;
-  border: 2px solid #f6f6f6;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
   border-radius: 20px;
   margin-bottom: 15px;
   align-items: center;
   font-weight: bold;
+}
+
+.container-fonctionnement li:hover {
+  background-color: rgba(255, 121, 208, 0.1);
 }
 
 .fonctionnement-numeros {
@@ -430,11 +432,11 @@ input::placeholder {
 }
 
 .plat {
-  animation: fondu 1.3s both;
+  animation: fondu 2s both;
 }
 
 .desserts {
-  animation: fondu 1.9s both;
+  animation: fondu 3s both;
 }
 
 @media screen and (min-width: 768px) {
@@ -443,6 +445,15 @@ input::placeholder {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     gap: 20px;
+  }
+}
+@media (min-width: 280) and (max-width: 768px) {
+  .restaurant-list {
+    max-width: 420px;
+    margin: auto;
+  }
+  .card-menu {
+    font-size: 1.3rem;
   }
 }
 @keyframes fondu {
@@ -544,7 +555,6 @@ button:hover {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   background-image: linear-gradient(#ff79da, #9356dc);
-  -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
   transform: scale(0);
