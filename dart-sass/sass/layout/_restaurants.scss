@@ -204,6 +204,35 @@
     animation: fondu 3s both;
 }
 
+// #plat-1{
+//     animation: fondu 1s both;
+// }
+// #plat-2{
+//     animation: fondu 1.4s both;
+// }
+// #plat-3{
+//     animation: fondu 1.6s both;
+// }
+// #plat-4{
+//     animation: fondu 1.8s both;
+// }
+// #plat-5{
+//     animation: fondu 2s both;
+// }
+// #plat-6{
+//     animation: fondu 2.2s both;
+// }
+// #plat-7{
+//     animation: fondu 2.4s both;
+// }
+// #plat-8{
+//     animation: fondu 2.6s both;
+// }
+// #plat-9{
+//     animation: fondu 2.8s both;
+// }
+
+
 
 
 @media screen and (min-width: 769px) {
@@ -231,12 +260,13 @@
 
 @keyframes fondu {
     0%{
-   
+        transform: translateY(30%);
         opacity: 0;
 
     }
 
     100%{
+        transform: translateY(0);
         opacity: 1;
     }
 }

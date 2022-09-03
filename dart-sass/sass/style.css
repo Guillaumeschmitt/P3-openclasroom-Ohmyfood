@@ -475,9 +475,11 @@ input::placeholder {
 }
 @keyframes fondu {
   0% {
+    transform: translateY(30%);
     opacity: 0;
   }
   100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -500,6 +502,7 @@ button {
 button:hover {
   box-shadow: 5px 5px 15px 5px #9356dc;
   filter: brightness(120%);
+  font-weight: lighter;
 }
 
 @keyframes loader-background {
