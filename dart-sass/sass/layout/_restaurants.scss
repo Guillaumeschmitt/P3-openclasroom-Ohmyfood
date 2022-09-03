@@ -147,7 +147,6 @@
 }
 
 .check {
-    // display: none;
     display: flex;
     align-items: center;
     position: absolute;
@@ -188,12 +187,6 @@
         transition-duration: 680ms;
         transition-delay: 100ms;
     }
-    // .check
-    // {
-    //     transition: 1.5s ease;
-    //     animation: slide-left 1.5s ease;
-    //     opacity: 1;
-    // }
     
 
 }
@@ -213,7 +206,7 @@
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .restaurant-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
