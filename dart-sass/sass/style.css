@@ -273,6 +273,9 @@ input::placeholder {
     max-width: 520px;
     margin: auto;
   }
+  body {
+    background-color: #f6f6f6;
+  }
 }
 .header-restaurant {
   display: flex;
