@@ -499,6 +499,7 @@ button {
 }
 button:hover {
   box-shadow: 5px 5px 15px 5px #9356dc;
+  background: linear-gradient(200deg, #ff79da 50%, #9356dc 100%);
 }
 
 @keyframes loader-background {
