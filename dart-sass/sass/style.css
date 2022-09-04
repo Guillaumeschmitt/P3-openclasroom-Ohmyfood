@@ -459,7 +459,7 @@ input::placeholder {
 }
 @media screen and (max-width: 768px) {
   .restaurant-list {
-    max-width: 340px;
+    max-width: 370px;
     margin: auto;
   }
   .card-menu {
