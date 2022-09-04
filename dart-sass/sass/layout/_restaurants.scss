@@ -9,10 +9,10 @@
     padding-top: 5px;
 
     >a {
-        position: relative;
+        position: absolute;
         font-size: 20px;
-        right: 30px;
-        top: 14px;
+        left: 20px;
+        top: 19px;
     }
 }
 
@@ -36,7 +36,7 @@
 
 .menu {
     margin-top: -200px;
-    padding: 0 15px;
+    padding: 0 14px;
     background-color: $light-grey;
     border-radius: 30px 30px 0 0;
     position: relative;
@@ -160,7 +160,7 @@
         display: flex;
         color: white;
         transition: 1s ease;
-        font-size: 35px;
+        font-size: 20px;
         // padding-top: 11px;
     }
 }
@@ -193,15 +193,15 @@
 
 
 .entrees{
-    animation: fondu 1s both;
+    animation: fondu 1.5s both;
 }
 
 .plat{
-    animation: fondu 2s both;
+    animation: fondu 2.5s both;
 }
 
 .desserts{
-    animation: fondu 3s both;
+    animation: fondu 3.5s both;
 }
 
 
@@ -213,14 +213,11 @@
         grid-template-rows: 1fr;
         gap: 20px;
     }
-    .header-restaurant a{
-        right: 300px;
-    }
 }
 
 @media screen and (max-width: 768px) {
     .restaurant-list {
-        max-width: 290px;
+        max-width: 340px;
         margin: auto;
     }
     .card-menu{

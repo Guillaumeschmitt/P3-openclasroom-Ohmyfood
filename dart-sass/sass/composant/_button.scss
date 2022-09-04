@@ -4,9 +4,9 @@ button{
     color: white;
     border: none;
     border-radius: 200px;
-    box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 50%);
+    box-shadow: 5px 5px 25px 5px rgb(0 0 0 / 20%);
     &:hover{
-        box-shadow: 5px 5px 15px 5px #9356dc;
+        // box-shadow: 5px 5px 15px 5px #9356dc;
         filter: brightness(120%);
         font-weight: lighter;
     }

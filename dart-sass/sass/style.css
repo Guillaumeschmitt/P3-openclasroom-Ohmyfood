@@ -195,10 +195,6 @@ input::placeholder {
   margin: 0 15px;
 }
 
-.restaurants-list {
-  background-color: #f6f6f6;
-}
-
 .restaurant-card {
   background-color: white;
   border-radius: 25px;
@@ -287,10 +283,10 @@ input::placeholder {
   padding-top: 5px;
 }
 .header-restaurant > a {
-  position: relative;
+  position: absolute;
   font-size: 20px;
-  right: 30px;
-  top: 14px;
+  left: 20px;
+  top: 19px;
 }
 
 .main-restaurant {
@@ -311,7 +307,7 @@ input::placeholder {
 
 .menu {
   margin-top: -200px;
-  padding: 0 15px;
+  padding: 0 14px;
   background-color: #f6f6f6;
   border-radius: 30px 30px 0 0;
   position: relative;
@@ -421,7 +417,7 @@ input::placeholder {
   display: flex;
   color: white;
   transition: 1s ease;
-  font-size: 35px;
+  font-size: 20px;
 }
 
 .card-menu:hover .menu-price {
@@ -442,15 +438,15 @@ input::placeholder {
 }
 
 .entrees {
-  animation: fondu 1s both;
+  animation: fondu 1.5s both;
 }
 
 .plat {
-  animation: fondu 2s both;
+  animation: fondu 2.5s both;
 }
 
 .desserts {
-  animation: fondu 3s both;
+  animation: fondu 3.5s both;
 }
 
 @media screen and (min-width: 769px) {
@@ -460,13 +456,10 @@ input::placeholder {
     grid-template-rows: 1fr;
     gap: 20px;
   }
-  .header-restaurant a {
-    right: 300px;
-  }
 }
 @media screen and (max-width: 768px) {
   .restaurant-list {
-    max-width: 290px;
+    max-width: 340px;
     margin: auto;
   }
   .card-menu {
@@ -497,10 +490,9 @@ button {
   color: white;
   border: none;
   border-radius: 200px;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.2);
 }
 button:hover {
-  box-shadow: 5px 5px 15px 5px #9356dc;
   filter: brightness(120%);
   font-weight: lighter;
 }
@@ -539,7 +531,7 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  animation: loader-background 3000ms;
+  animation: loader-background 2000ms;
 }
 .pageLoader__bar1 {
   animation: roll-in 800ms ease-out 200ms alternate 2 both;

@@ -47,7 +47,7 @@
     transform: translate(-50%, -50%);
     z-index: 1;
 
-    animation: loader-background 3000ms;
+    animation: loader-background 2000ms;
     &__bar1 {
         animation: roll-in 800ms ease-out 200ms alternate 2 both;
         @include barreLoader ($primary-color);
